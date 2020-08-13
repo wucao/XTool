@@ -1,0 +1,3 @@
+tencentcloud:
+  secretId: yourSecretId
+  secretKey: yourSecretKey
