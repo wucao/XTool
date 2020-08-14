@@ -3,12 +3,26 @@
     <div class="box">
         <div class="box-body">
 
-            <div>
-                <div><label>文件上传</label></div>
-                <div>
-                    <div id="btn-upload" class="btn btn-primary fileinput-button">
-                        <i class="fa fa-upload"></i> 选择文件
-                        <input type="file" name="file">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">文件上传</a></li>
+                    <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="true">文件地址</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab_1">
+                        <div id="btn-upload" class="btn btn-primary btn-lg fileinput-button">
+                            <i class="fa fa-upload"></i> 选择文件
+                            <input type="file" name="file">
+                        </div>
+                    </div>
+                    <!-- /.tab-pane -->
+                    <div class="tab-pane" id="tab_2">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary btn-flat">开始解析（暂不支持）</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div id="upload-progress-container" style="display: none;">

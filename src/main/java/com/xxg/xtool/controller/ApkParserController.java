@@ -53,4 +53,10 @@ public class ApkParserController {
             FileUtils.deleteQuietly(new File(localFile));
         }
     }
+
+    @ResponseBody
+    @PostMapping("/downloadAndParse")
+    public ApkInfo downloadAndParse(String url) throws IOException {
+        return null;
+    }
 }
