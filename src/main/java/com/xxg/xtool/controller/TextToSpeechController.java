@@ -15,15 +15,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Base64;
 
 @Controller
-@RequestMapping("/textToAudio")
-public class TextToAudioController {
+@RequestMapping("/textToSpeech")
+public class TextToSpeechController {
 
     @Autowired
     private TencentCloudService tencentCloudService;
 
     @GetMapping("/index")
     public String index() {
-        return "textToAudio/index";
+        return "TextToSpeech/index";
     }
 
     /**
@@ -32,13 +32,13 @@ public class TextToAudioController {
      * 控制台： https://console.cloud.tencent.com/tts
      * API 文档: https://cloud.tencent.com/document/api/1073/37995
      */
-    @GetMapping("/tencentCloudGenerate")
-    public ResponseEntity<Resource> tencentCloud(String text, int voiceType) throws TencentCloudSDKException {
+    @GetMapping("/tencentCloudTts")
+    public ResponseEntity<Resource> tencentCloudTts(String text, int voiceType) throws TencentCloudSDKException {
         String base64 = tencentCloudService.tts(text, voiceType);
         byte[] mp3Data = Base64.getDecoder().decode(base64);
         ByteArrayResource resource = new ByteArrayResource(mp3Data);
         return ResponseEntity.ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=textToAudio.mp3")
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=TextToSpeech.mp3")
                 .contentLength(mp3Data.length)
                 .contentType(MediaType.APPLICATION_OCTET_STREAM)
                 .body(resource);

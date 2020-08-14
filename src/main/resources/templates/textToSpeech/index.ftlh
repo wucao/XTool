@@ -164,7 +164,7 @@
                 alert("请选择音色");
                 throw "请选择音色";
             }
-            let url = "tencentCloudGenerate?text=" + encodeURIComponent(textContent) + "&voiceType=" + voiceType;
+            let url = "tencentCloudTts?text=" + encodeURIComponent(textContent) + "&voiceType=" + voiceType;
             return url;
         }
         $("#btn-play").click(function () {

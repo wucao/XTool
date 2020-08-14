@@ -32,7 +32,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">图片/音视频 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="/textToAudio/index">文字转语音</a></li>
+                            <li><a href="/textToSpeech/index">文字转语音</a></li>
                         </ul>
                     </li>
                 </ul>
