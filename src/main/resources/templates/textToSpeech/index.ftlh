@@ -164,6 +164,10 @@
                 alert("请选择音色");
                 throw "请选择音色";
             }
+            if (textContent.length > 100) {
+                alert("内容长度不能超过 100，长度是 " + textContent.length);
+                throw "内容长度不能超过 100，长度是 " + textContent.length;
+            }
             let url = "tencentCloudTts?text=" + encodeURIComponent(textContent) + "&voiceType=" + voiceType;
             return url;
         }
