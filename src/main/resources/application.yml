@@ -1,3 +1,9 @@
+spring:
+  servlet:
+    multipart:
+      maxFileSize: -1
+      maxRequestSize: -1
+
 tencentcloud:
   secretId: yourSecretId
   secretKey: yourSecretKey

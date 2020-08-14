@@ -23,7 +23,7 @@ public class TextToSpeechController {
 
     @GetMapping("/index")
     public String index() {
-        return "TextToSpeech/index";
+        return "textToSpeech/index";
     }
 
     /**
