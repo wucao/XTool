@@ -16,51 +16,61 @@
     <title>XTool - ${title}</title>
 </head>
 <body class="skin-purple layout-top-nav">
-<header class="main-header">
-    <nav class="navbar navbar-static-top">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+    <header class="main-header">
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <span class="navbar-brand">XTool</span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">图片/音视频 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/textToSpeech/index">文字转语音</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">文件 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/apkParser/index">APK 文件解析</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+
         <div class="container">
-            <div class="navbar-header">
-                <span class="navbar-brand">XTool</span>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">图片/音视频 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/textToSpeech/index">文字转语音</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">文件 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/apkParser/index">APK 文件解析</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <section class="content-header">
+                <h1>
+                    ${title}
+                </h1>
+            </section>
+            <section class="content">
+                <#nested>
+            </section>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-</header>
-
-<div class="content-wrapper">
-
-    <div class="container">
-        <section class="content-header">
-            <h1>
-                ${title}
-            </h1>
-        </section>
-        <section class="content">
-            <#nested>
-        </section>
     </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <strong>Copyright © 2019-2020 <a target="_blank" href="https://github.com/wucao/XTool">XTool</a>.</strong> All rights reserved.
+        </div>
+    </footer>
+
 </div>
 </body>
 </html>
