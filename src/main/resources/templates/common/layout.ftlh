@@ -43,6 +43,13 @@
                                 <li><a href="/apkParser/index">APK 文件解析</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">编解码 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/characterEntity/index">HTML 字符实体编解码</a></li>
+                                <li><a href="/urlEncode/index">URL 编解码</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
