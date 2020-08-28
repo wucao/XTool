@@ -35,6 +35,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">图片/音视频 <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/textToSpeech/index">文字转语音</a></li>
+                                <li><a href="/ocr/index">图片文字识别</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
