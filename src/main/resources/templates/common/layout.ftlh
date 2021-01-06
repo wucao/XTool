@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/admin-lte/2.4.17/css/AdminLTE.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/admin-lte/2.4.17/css/skins/skin-purple.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/admin-lte/2.4.17/js/adminlte.min.js"></script>
+    <link href="/components/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/components/Font-Awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/components/ionicons-2.0.0/css/ionicons.min.css" rel="stylesheet">
+    <link href="/components/AdminLTE-2.4.17/css/AdminLTE.min.css" rel="stylesheet">
+    <link href="/components/AdminLTE-2.4.17/css/skins/skin-purple.min.css" rel="stylesheet">
+    <script src="/components/jquery-3.4.1/jquery.min.js"></script>
+    <script src="/components/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="/components/AdminLTE-2.4.17/js/adminlte.min.js"></script>
     <title>XTool - ${title}</title>
 </head>
 <body class="skin-purple layout-top-nav">
